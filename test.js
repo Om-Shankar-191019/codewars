@@ -19,6 +19,13 @@ function squareStarPattern(width, height) {
 
 // squareStarPattern(6, 3);
 
+// [
+//     [ '*', '*', '*' ],
+//     [ '*', '*', '*' ],
+//     [ '*', '*', '*' ],
+//     [ '*', '*', '*' ],
+//     [ '*', '*', '*' ]
+//   ]
 function squareInArray(width, height) {
   let rows = [];
   for (let i = 0; i < height; i++) {
