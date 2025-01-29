@@ -23,3 +23,17 @@ function sumTwoSmallestNumbers(numbers) {
   }
   return numbers[secondLow] + numbers[lowest];
 }
+
+function sumTwoSmallestNumbers(numbers) {
+  // Code here
+  numbers.sort((a, b) => a - b);
+  return numbers[0] + numbers[1];
+}
+
+function sumTwoSmallestNumbers(numbers) {
+  // Code here
+  let l1 = Math.min(...numbers);
+  numbers.splice(numbers.indexOf(l1), 1);
+  let l2 = Math.min(...numbers);
+  return l1 + l2;
+}
